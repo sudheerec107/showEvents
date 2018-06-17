@@ -1,0 +1,18 @@
+<div fxFlex fxLayout.xs="column" fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center center">
+  <mat-card *ngFor="let item of events" class="event-card">
+    <mat-card-title>{{item.heading}}</mat-card-title>
+    <mat-card-subtitle>{{item.subheading}}</mat-card-subtitle>
+    <img mat-card-image src="../../../assets/PanCard_1.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>{{item.description}}</mat-card-content>
+    <img mat-card-image> Card image. Stretches the image to the container width
+    <mat-card-actions fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="flex-start center">
+      <button mat-icon-button>
+        <mat-icon [matBadge]="item.likes" matBadgeColor="primary" matBadgeOverlap="false">thumb_up_alt</mat-icon>
+      </button>
+      <button mat-icon-button [matBadge]="item.shares" matBadgeColor="primary">
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-card-actions>
+    <mat-card-footer> </mat-card-footer>
+  </mat-card>
+</div>

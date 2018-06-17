@@ -1,0 +1,26 @@
+<mat-nav-list>
+    <mat-list-item>
+        <a matLine routerLink="events" (click)="closeSidenav.emit()">Events</a>
+        <button mat-icon-button>
+            <mat-icon matListIcon>today</mat-icon>
+        </button>
+    </mat-list-item>
+    <mat-list-item>
+        <a matLine routerLink="signup" (click)="closeSidenav.emit()">Sign up</a>
+        <button mat-icon-button>
+            <mat-icon matListIcon>face</mat-icon>
+        </button>
+    </mat-list-item>
+    <mat-list-item>
+        <a matLine routerLink="login" (click)="closeSidenav.emit()">Login</a>
+        <button mat-icon-button>
+            <mat-icon matListIcon>fingerprint</mat-icon>
+        </button>
+    </mat-list-item>
+    <mat-list-item>
+        <a matLine (click)="closeSidenav.emit()" routerLink="login">Logout</a>
+        <button mat-icon-button>
+            <mat-icon matListIcon>exit_to_app</mat-icon>
+        </button>
+    </mat-list-item>
+</mat-nav-list>

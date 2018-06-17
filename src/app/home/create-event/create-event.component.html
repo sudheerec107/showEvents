@@ -1,0 +1,18 @@
+<form [formGroup]="createEvent" fxLayout="column">
+  <mat-form-field fxFlex="32%">
+    <input matInput placeholder="Heading" formControlName="heading">
+  </mat-form-field>
+  <mat-form-field  fxFlex="32%">
+    <input matInput placeholder="Sub Heading" formControlName="subHeading">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Date" formControlName="date">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Category" formControlName="category">
+  </mat-form-field>
+  <mat-form-field>
+    <textarea row="3" matInput formControlName="description" placeholder="Description"></textarea>
+  </mat-form-field>
+</form>
+
